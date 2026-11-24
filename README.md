@@ -9,6 +9,7 @@ Case studies of AI assistants and automations that I designed and specified. I d
 - [`make/case_study.md`](make/case_study.md): sign-up automation and a chat-assistant prototype for a community organisation (seven Make scenarios, 147 modules).
 - [`make/technical_notes.md`](make/technical_notes.md): sanitised structure of the seven scenarios, error handling and assistant design.
 - `make/*.svg`: six flow diagrams.
+- [`product/weekly-status-report-prd.md`](product/weekly-status-report-prd.md): product brief for a weekly status-report automation I use with my own team (problem, users, decisions, estimated measures, limits).
 - [`agents/agent-patterns.md`](agents/agent-patterns.md): five agent patterns from my projects, with an evidence column.
 
 Related: n8n workflow documentation lives in the [n8n](https://github.com/TalYanai/n8n) repository.
