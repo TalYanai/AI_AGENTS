@@ -1,15 +1,24 @@
-# AI Agents
+# AI agents and automations
 
-Experiments and implementations around AI agent architectures using the **Claude API**.
+Case studies of AI assistants and automations that I designed and specified. I describe the behaviour, the guardrails and the data flow, and I assemble the result with low-code tools (Make, n8n) and AI coding assistants.
 
-Covers: prompt engineering, tool use, multi-agent orchestration, and autonomous task execution.
+**Status:** documentation and design notes. Nothing here claims production use, usage numbers or outcomes; those were not verified. Where something is a prototype or has known flaws, the write-up says so.
 
-## Areas of Exploration
+## Contents
 
-- **Multi-agent systems** — orchestrator + specialized sub-agents pattern
-- **Tool use** — connecting LLMs to external APIs and data sources
-- **Autonomous workflows** — agents that plan and execute multi-step tasks
+- [`make/case_study.md`](make/case_study.md): sign-up automation and a chat-assistant prototype for a community organisation (seven Make scenarios, 147 modules).
+- [`make/technical_notes.md`](make/technical_notes.md): sanitised structure of the seven scenarios, error handling and assistant design.
+- `make/*.svg`: six flow diagrams.
+- [`agents/agent-patterns.md`](agents/agent-patterns.md): five agent patterns from my projects, with an evidence column.
 
-> Actively developed alongside my [personal-assistant](https://github.com/TalYanai/personal-assistant) project.
+Related: n8n workflow documentation lives in the [n8n](https://github.com/TalYanai/n8n) repository.
 
-**Author:** Tal Yanai · [@TalYanai](https://github.com/TalYanai)
+## Honest status
+
+| Piece | Status | Evidence |
+|---|---|---|
+| Make scenarios (7) | Complete exported blueprints; production use not verified | Static reading of exports |
+| Community chat assistant | Documented prototype; live use not verified | Instructions and embed page |
+| Agent patterns (5) | Mixed; see the table in the patterns file | Code reviewed, export, prototype |
+
+Names, identifiers and links from the original material are removed; product names are generalised.

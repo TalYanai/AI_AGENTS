@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 576" role="img">
+<defs><marker id="head" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#1f2328"/></marker></defs>
+<style>
+.box{fill:#fff;stroke:#1f2328;stroke-width:1.2}
+.store{fill:#fff;stroke:#0969da;stroke-width:1.6}
+.lbl{fill:#1f2328;font:600 14px sans-serif}
+.sub{fill:#57606a;font:13px sans-serif}
+.arr{stroke:#1f2328;stroke-width:1.4;fill:none;marker-end:url(#head)}
+</style>
+<rect width="100%" height="100%" fill="#fff"/>
+
+  <title>New contact messaging flow</title>
+  <desc>A change on a registrations board triggers a short wait, validation checks, creation of a contact in a messaging tool, a template message and a label.</desc>
+  <path class="arr" d="M260 66 L260 90"/>
+  <path class="arr" d="M260 136 L260 160"/>
+  <path class="arr" d="M260 206 L260 230"/>
+  <path class="arr" d="M260 276 L260 300"/>
+  <path class="arr" d="M260 346 L260 370"/>
+  <path class="arr" d="M260 416 L260 440"/>
+  <path class="arr" d="M260 486 L260 510"/>
+  <rect class="store" x="110" y="20" width="300" height="46" rx="6"/>
+  <text class="lbl" x="260" y="40" text-anchor="middle">Board status change</text>
+  <text class="sub" x="260" y="57" text-anchor="middle">watch column</text>
+  <rect class="box" x="110" y="90" width="300" height="46" rx="6"/>
+  <text class="lbl" x="260" y="110" text-anchor="middle">Wait 5 seconds</text>
+  <text class="sub" x="260" y="127" text-anchor="middle">let board settle</text>
+  <rect class="box" x="110" y="160" width="300" height="46" rx="6"/>
+  <text class="lbl" x="260" y="180" text-anchor="middle">Read item</text>
+  <text class="sub" x="260" y="197" text-anchor="middle">contact present?</text>
+  <rect class="box" x="110" y="230" width="300" height="46" rx="6"/>
+  <text class="lbl" x="260" y="250" text-anchor="middle">Check status</text>
+  <text class="sub" x="260" y="267" text-anchor="middle">4 conditions</text>
+  <rect class="box" x="110" y="300" width="300" height="46" rx="6"/>
+  <text class="lbl" x="260" y="320" text-anchor="middle">Phone valid?</text>
+  <text class="sub" x="260" y="337" text-anchor="middle">normalise number</text>
+  <rect class="box" x="110" y="370" width="300" height="46" rx="6"/>
+  <text class="lbl" x="260" y="390" text-anchor="middle">Create contact</text>
+  <text class="sub" x="260" y="407" text-anchor="middle">HTTP, API key</text>
+  <rect class="box" x="110" y="440" width="300" height="46" rx="6"/>
+  <text class="lbl" x="260" y="460" text-anchor="middle">Send template</text>
+  <text class="sub" x="260" y="477" text-anchor="middle">messaging app</text>
+  <rect class="box" x="110" y="510" width="300" height="46" rx="6"/>
+  <text class="lbl" x="260" y="530" text-anchor="middle">Assign label</text>
+  <text class="sub" x="260" y="547" text-anchor="middle">if message sent</text>
+</svg>

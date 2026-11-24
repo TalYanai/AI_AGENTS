@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 490" role="img">
+<defs><marker id="head" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#1f2328"/></marker></defs>
+<style>
+.box{fill:#fff;stroke:#1f2328;stroke-width:1.2}
+.store{fill:#fff;stroke:#0969da;stroke-width:1.6}
+.lbl{fill:#1f2328;font:600 14px sans-serif}
+.sub{fill:#57606a;font:13px sans-serif}
+.arr{stroke:#1f2328;stroke-width:1.4;fill:none;marker-end:url(#head)}
+</style>
+<rect width="100%" height="100%" fill="#fff"/>
+
+  <title>Registration intake flow</title>
+  <desc>A form submission arrives by webhook, is classified, and logged to a spreadsheet. It then splits into an attendee path and a host path, and both write to a registrations board.</desc>
+  <path class="arr" d="M260 70 L260 90"/>
+  <path class="arr" d="M260 140 L260 160"/>
+  <path class="arr" d="M260 210 L260 235 L135 235 L135 270"/>
+  <path class="arr" d="M260 210 L260 235 L385 235 L385 270"/>
+  <path class="arr" d="M135 320 L135 345"/>
+  <path class="arr" d="M385 320 L385 345"/>
+  <path class="arr" d="M385 395 L385 420"/>
+  <rect class="box" x="130" y="20" width="260" height="50" rx="6"/>
+  <text class="lbl" x="260" y="42" text-anchor="middle">Form submission</text>
+  <text class="sub" x="260" y="59" text-anchor="middle">instant webhook</text>
+  <rect class="box" x="130" y="90" width="260" height="50" rx="6"/>
+  <text class="lbl" x="260" y="112" text-anchor="middle">Classify type</text>
+  <text class="sub" x="260" y="129" text-anchor="middle">4 cases + default</text>
+  <rect class="store" x="130" y="160" width="260" height="50" rx="6"/>
+  <text class="lbl" x="260" y="182" text-anchor="middle">Log row in sheet</text>
+  <text class="sub" x="260" y="199" text-anchor="middle">spreadsheet</text>
+  <rect class="box" x="20" y="270" width="230" height="50" rx="6"/>
+  <text class="lbl" x="135" y="292" text-anchor="middle">Tab missing?</text>
+  <text class="sub" x="135" y="309" text-anchor="middle">copy template, retry</text>
+  <rect class="store" x="20" y="345" width="230" height="50" rx="6"/>
+  <text class="lbl" x="135" y="367" text-anchor="middle">Create board item</text>
+  <text class="sub" x="135" y="384" text-anchor="middle">registrations board</text>
+  <rect class="box" x="270" y="270" width="230" height="50" rx="6"/>
+  <text class="lbl" x="385" y="292" text-anchor="middle">Check existing leads</text>
+  <text class="sub" x="385" y="309" text-anchor="middle">phone normalised</text>
+  <rect class="box" x="270" y="345" width="230" height="50" rx="6"/>
+  <text class="lbl" x="385" y="367" text-anchor="middle">New or existing?</text>
+  <text class="sub" x="385" y="384" text-anchor="middle">two branches</text>
+  <rect class="store" x="270" y="420" width="230" height="50" rx="6"/>
+  <text class="lbl" x="385" y="442" text-anchor="middle">Create item, log result</text>
+  <text class="sub" x="385" y="459" text-anchor="middle">board + sheet</text>
+  <text class="sub" x="135" y="258" text-anchor="middle">Attendee path</text>
+  <text class="sub" x="385" y="258" text-anchor="middle">Host path</text>
+</svg>
